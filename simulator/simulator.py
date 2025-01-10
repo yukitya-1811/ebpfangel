@@ -15,7 +15,7 @@ from temp import CreateTempData
 from configparser import ConfigParser
 import cryptography
 
-print(cryptography.hazmat.backends.openssl.backend.openssl_version_text())
+print(cryptography.hazmat.backends.default_backend().openssl_version_text())
 
 CONFIG="simulator.ini"
 
